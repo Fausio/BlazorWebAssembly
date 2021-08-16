@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BlazorProject.Server.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +11,10 @@ namespace BlazorProject.Server.Controllers
     [ApiController]
     public class EmployeeController : ControllerBase
     {
-        public IActionResult Index()
+        private readonly IEmployeeRepository employeeRepository;
+        public EmployeeController(IEmployeeRepository iemployeeRepositore)
         {
-            return View();
+            this.employeeRepository = iemployeeRepositore;
         }
     }
 }
