@@ -63,8 +63,8 @@ namespace BlazorProject.Server.Models
             });
         }
 
-        DbSet<Department> Department { get; set; }
-        DbSet<Employee> employee { get; set; }
+       public DbSet<Department> Department { get; set; }
+       public DbSet<Employee> Employee { get; set; }
 
 
     }
