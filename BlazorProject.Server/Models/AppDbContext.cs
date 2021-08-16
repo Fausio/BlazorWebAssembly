@@ -41,7 +41,7 @@ namespace BlazorProject.Server.Models
 
             modelBuilder.Entity<Employee>().HasData(new Employee
             {
-                EmployeeId = 1,
+                EmployeeId = 2,
                 FirstName = "John",
                 LastName = "Hastings",
                 Email = "edv@mail.com",
@@ -53,7 +53,7 @@ namespace BlazorProject.Server.Models
 
             modelBuilder.Entity<Employee>().HasData(new Employee
             {
-                EmployeeId = 1,
+                EmployeeId = 3,
                 FirstName = "Fernando",
                 LastName = "Carlos",
                 Email = "Fernandoo@live.com",

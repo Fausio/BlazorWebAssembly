@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlazorProjectShared
+namespace BlazorProject.Shared
 {
     [Table("Department")]
     public class Department
