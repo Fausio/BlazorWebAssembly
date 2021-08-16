@@ -1,4 +1,6 @@
 ﻿using BlazorProject.Server.Models;
+using BlazorProject.Shared;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -15,6 +17,22 @@ namespace BlazorProject.Server.Controllers
         public EmployeeController(IEmployeeRepository iemployeeRepositore)
         {
             this.employeeRepository = iemployeeRepositore;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult> GetEmployee()
+        {
+
+            try
+            {
+                return Ok(await employeeRepository.GetEmployees());
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving data from the database");
+            }
+        
         }
     }
 }
