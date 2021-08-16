@@ -16,7 +16,7 @@ namespace BlazorProjectShared
         public string LastName { get; set; }
         public string Email { get; set; }
         public DateTime DateOfBirth { get; set; }
-        public Gender gender { get; set; }
+        public Gender Gender { get; set; }
         public int DepartmentId { get; set; }
         public Department Department { get; set; }
     }
