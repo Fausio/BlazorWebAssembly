@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorProject.Services", "BlazorWebAssembly\BlazorProject.Services.csproj", "{E71A0BD1-C218-41D0-B084-9035C60834B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorProject.Server", "BlazorWebAssembly\BlazorProject.Server.csproj", "{E71A0BD1-C218-41D0-B084-9035C60834B2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorProject.Client", "BlazorProject.Client\BlazorProject.Client.csproj", "{1727EB1F-473B-4274-A49C-F28466F828FE}"
 EndProject
