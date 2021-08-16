@@ -15,8 +15,7 @@ namespace BlazorProject.Server.Models
         {
             this.db = appDbContext;
         }
-        public async Task<Department> GetDepartmentById(int departmentId) => await db.Department.FirstOrDefaultAsync(d => d.DepartmentId == departmentId);
-
+        public async Task<Department> GetDepartmentById(int departmentId) => await db.Department.FirstOrDefaultAsync(d => d.DepartmentId == departmentId); 
         public async Task<IEnumerable<Department>> GetDepartments() => await db.Department.ToListAsync();
     }
 }
