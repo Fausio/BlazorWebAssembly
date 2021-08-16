@@ -1,5 +1,4 @@
-﻿using BlazorProject.Shared;
-using BlazorProjectShared;
+﻿using BlazorProject.Shared; 
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

@@ -1,4 +1,4 @@
-﻿namespace BlazorProjectShared
+﻿namespace BlazorProject.Shared
 {
     public enum Gender
     {
