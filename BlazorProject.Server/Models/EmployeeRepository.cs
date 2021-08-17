@@ -20,7 +20,7 @@ namespace BlazorProject.Server.Models
 
         public async Task<Employee> GetEmployeeByEmail(string email) => await db.Employee.Include(d => d.Department).FirstOrDefaultAsync(e => e.Email == email);
         public async Task<Employee> GetEmployeeById(int EmpployeeId) => await db.Employee.Include(d => d.Department).FirstOrDefaultAsync(e => e.EmployeeId == EmpployeeId);
-        public async Task<IEnumerable<Employee>> GetEmployees() => await db.Employee.Include(d => d.Department).ToListAsync();
+        public async Task<IEnumerable<Employee>> GetEmployees() => await db.Employee.ToListAsync();
 
 
 

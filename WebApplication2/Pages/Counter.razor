@@ -1,7 +1,4 @@
 ﻿@page "/counter"
-@inject HttpClient http
-@using BlazorProject.Shared
-@using  Microsoft.AspNetCore.Components
 
 <h1>Counter</h1>
 
@@ -15,7 +12,5 @@
     private void IncrementCount()
     {
         currentCount++;
-        var d = http.GetAsync($"api/employee").Result;
-         
     }
 }

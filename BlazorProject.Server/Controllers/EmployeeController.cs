@@ -19,8 +19,31 @@ namespace BlazorProject.Server.Controllers
             this.employeeRepository = iemployeeRepositore;
         }
 
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<Employee>> GetEmployeeById(int id)
+        {
+
+            try
+            {
+               var result = await employeeRepository.GetEmployeeById(id);
+
+                if (result ==null)
+                {
+                    return NotFound();
+                }
+
+                return result;
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error retrieving data from the database");
+            }
+
+        }
+
         [HttpGet]
-        public async Task<ActionResult> GetEmployee()
+        public async Task<ActionResult> GetEmployees()
         {
 
             try
